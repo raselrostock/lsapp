@@ -25,3 +25,5 @@ Route::get('/user/{id}',function($id){
 });
 */
 Route::get('/about', 'PagesController@about');
+
+Route::resource('posts','PostController');

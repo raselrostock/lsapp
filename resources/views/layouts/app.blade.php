@@ -9,10 +9,15 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
 
         
     </head>
     <body>
-        @yield('content')
+        @include('menu.navbar');
+        <div class="container">
+            @yield('content')
+        </div>
+        
     </body>
 </html>
